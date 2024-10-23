@@ -1,8 +1,8 @@
 package org.example;
 
-public class Road extends Environment<Vehicle>{
+public class Road extends Environment<Drivable>{
     @Override
     public void checkTraffic() {
-        super.traffic.forEach(Vehicle::move);
+        super.traffic.forEach(Drivable::drive);
     }
 }
