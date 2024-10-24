@@ -13,4 +13,12 @@ public abstract class Environment<T> {
         this.traffic.add(traffic);
     }
 
+
+    public void checkVehicles() {
+        for(T element : traffic){
+            if(element instanceof Vehicle){
+                ((Vehicle) element).move();
+            }
+        }
+    }
 }

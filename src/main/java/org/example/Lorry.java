@@ -8,6 +8,6 @@ public class Lorry extends Vehicle implements Drivable{
 
     @Override
     void move() {
-
+        System.out.println("Lorry is being driven!");
     }
 }
